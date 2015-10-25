@@ -1,0 +1,10 @@
+{
+  "name": "brandly",
+  "version": "0.0.1",
+  "description": "Fashion themed shop static homepage ",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Tim Cartwright"
+}
