@@ -44,4 +44,4 @@ gulp.task('watch', function() {
 });
 
 // Default runs when 'gulp' is called from terminal
-gulp.task('default', ['coffee', 'js', 'compass']);
+gulp.task('default', ['coffee', 'js', 'compass', 'watch']);
