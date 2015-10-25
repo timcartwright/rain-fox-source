@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	coffee = require('gulp-coffee'),
 	browserify = require('gulp-browserify'),
 	compass = require('gulp-compass'),
+	connect = require('gulp-connect'),
 	concat = require('gulp-concat');
 
 // Sources - can be multiple in each array
@@ -11,7 +12,9 @@ var coffeeSources = ['components/coffee/*.coffee'];
 var jsSources = ['components/scripts/*.js'];
 var sassSources = ['components/sass/main.scss']
 
-// Tasks
+//// Tasks
+
+// Coffee
 gulp.task('coffee', function(){
 	gulp.src(coffeeSources)
 		.pipe(coffee({bare: true})
@@ -19,13 +22,16 @@ gulp.task('coffee', function(){
 		.pipe(gulp.dest('components/scripts'))
 });
 
+// jS
 gulp.task('js', function() {
 	gulp.src(jsSources)
 	.pipe(concat('script.js'))
 	.pipe(browserify())
 	.pipe(gulp.dest('builds/development/js'))
+	.pipe(connect.reload()) // Server reload
 });
 
+// Sass / Compass
 gulp.task('compass', function() {
 	gulp.src(sassSources)
 	.pipe(compass({
@@ -35,13 +41,23 @@ gulp.task('compass', function() {
 	})
 		.on('error', gutil.log))
 	.pipe(gulp.dest('builds/development/css'))
+	.pipe(connect.reload()) // Server reload
 });
 
+// Watch for changes
 gulp.task('watch', function() {
 	gulp.watch(coffeeSources, ['coffee']);
 	gulp.watch(jsSources, ['js']);
 	gulp.watch('components/sass/*.scss', ['compass']);
 });
 
-// Default runs when 'gulp' is called from terminal
-gulp.task('default', ['coffee', 'js', 'compass', 'watch']);
+// Start server with live reload
+gulp.task('connect', function() {
+	connect.server({
+		root: 'builds/development/',
+		livereload: true
+	});
+});
+
+// Default: runs when 'gulp' is called from terminal
+gulp.task('default', ['coffee', 'js', 'compass', 'connect', 'watch']);
