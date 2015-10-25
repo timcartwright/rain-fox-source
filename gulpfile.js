@@ -10,7 +10,9 @@ var gulp = require('gulp'),
 // Sources - can be multiple in each array
 var coffeeSources = ['components/coffee/*.coffee'];
 var jsSources = ['components/scripts/*.js'];
-var sassSources = ['components/sass/main.scss']
+var sassSources = ['components/sass/main.scss'];
+var htmlSources = ['builds/development/*.html'];
+var jsonSources = ['builds/development/js/*.json'];
 
 //// Tasks
 
@@ -44,11 +46,25 @@ gulp.task('compass', function() {
 	.pipe(connect.reload()) // Server reload
 });
 
+// HTML
+gulp.task('html', function() {
+	gulp.src(htmlSources)
+		.pipe(connect.reload()) // Server reload
+});
+
+// json
+gulp.task('json', function() {
+	gulp.src(jsonSources)
+		.pipe(connect.reload()) // Server reload
+});
+
 // Watch for changes
 gulp.task('watch', function() {
 	gulp.watch(coffeeSources, ['coffee']);
 	gulp.watch(jsSources, ['js']);
 	gulp.watch('components/sass/*.scss', ['compass']);
+	gulp.watch(htmlSources, ['html']);
+	gulp.watch(jsonSources, ['json']);
 });
 
 // Start server with live reload
@@ -60,4 +76,4 @@ gulp.task('connect', function() {
 });
 
 // Default: runs when 'gulp' is called from terminal
-gulp.task('default', ['coffee', 'js', 'compass', 'connect', 'watch']);
+gulp.task('default', ['html','coffee', 'js', 'compass', 'json', 'connect', 'watch']);
