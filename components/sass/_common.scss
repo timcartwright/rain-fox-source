@@ -35,7 +35,7 @@ input.form-control {
 	text-align: center;
 	font-style: italic;
 	color: $font-color-dark;
-	margin-bottom: 60px;
+	margin-bottom: 2em;
 
 	&:after, &:before  {
 	    content:' ';
@@ -63,4 +63,11 @@ input.form-control {
     color: $font-color-white;
     background-color: $font-color-dark;
     border-color: $font-color-dark;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
 }

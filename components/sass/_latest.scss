@@ -1,3 +1,15 @@
+#latest {
+
+	a {
+		color: $white;
+
+		&:visited, &:active, &:hover {
+			color: $white;
+		}
+	}
+}
+
+
 .image-overlay {
 	position: absolute;
 	top: 50%;
@@ -9,15 +21,25 @@
 	font-size: 45px;
 	font-weight: 900;
 	padding: 10%;
+
 	
+}
+
+.color-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-color: #222533;
+	opacity: 0.6;
+	left: 15px;
+	right: 15px;
+	outline: 3px solid $white;
+  	outline-offset: -32px;
+  	transition: 0.3s;
 }
 
 
 .product {
-	img {
-  		outline: 3px solid $white;
-  		outline-offset: -32px;
-	}
 
 	.image-overlay {
 		font-size: 40px;
@@ -28,6 +50,10 @@
 
 .image-holder {
 	position: relative;
+
+	a {
+		background-color: #FFF;
+	}
 }
 
 .offer .image-overlay {

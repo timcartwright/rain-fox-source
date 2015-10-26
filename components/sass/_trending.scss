@@ -1,15 +1,17 @@
 #trending {
 	background-image: url("../images/trendingbg-1920x918.jpg");
 
-	div {
-		margin-bottom: 30px;
-	}
+	
 }
 
 .trending-content {
 
 	color: $font-color-light;
 	letter-spacing: 1px;
+
+	div {
+		margin-bottom: 30px;
+	}
 
 	h2 {
 		font-family: $alt-font;

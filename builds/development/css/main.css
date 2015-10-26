@@ -7355,7 +7355,7 @@ input.form-control {
   text-align: center;
   font-style: italic;
   color: #333;
-  margin-bottom: 60px;
+  margin-bottom: 2em;
 }
 .section-heading:after, .section-heading:before {
   content: ' ';
@@ -7382,6 +7382,13 @@ input.form-control {
   color: #fff;
   background-color: #333;
   border-color: #333;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #nav-wrap {
@@ -7464,8 +7471,6 @@ input.form-control {
   z-index: 3;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
   -webkit-transform: translate3d(-50%, -50%, 0);
   -moz-transform: translate3d(-50%, -50%, 0);
   -ms-transform: translate3d(-50%, -50%, 0);
@@ -7552,6 +7557,13 @@ input.form-control {
     width: 100%;
   }
 }
+#latest a {
+  color: #fff;
+}
+#latest a:visited, #latest a:active, #latest a:hover {
+  color: #fff;
+}
+
 .image-overlay {
   position: absolute;
   top: 50%;
@@ -7565,10 +7577,19 @@ input.form-control {
   padding: 10%;
 }
 
-.product img {
+.color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #222533;
+  opacity: 0.6;
+  left: 15px;
+  right: 15px;
   outline: 3px solid #fff;
   outline-offset: -32px;
+  transition: 0.3s;
 }
+
 .product .image-overlay {
   font-size: 40px;
   font-weight: 300;
@@ -7577,6 +7598,9 @@ input.form-control {
 
 .image-holder {
   position: relative;
+}
+.image-holder a {
+  background-color: #FFF;
 }
 
 .offer .image-overlay:after, .offer .image-overlay:before {
@@ -7590,13 +7614,13 @@ input.form-control {
 #trending {
   background-image: url("../images/trendingbg-1920x918.jpg");
 }
-#trending div {
-  margin-bottom: 30px;
-}
 
 .trending-content {
   color: #777;
   letter-spacing: 1px;
+}
+.trending-content div {
+  margin-bottom: 30px;
 }
 .trending-content h2 {
   font-family: "Lato";
@@ -7654,13 +7678,12 @@ input.form-control {
   margin-bottom: 30px;
 }
 #subscribe input.form-control {
-  width: 770px;
+  width: 100%;
   padding: 25px;
   color: #fff;
 }
 #subscribe .btn {
-  float: right;
-  width: 257px;
+  width: 100%;
 }
 #subscribe .btn:hover {
   background-color: #333;
