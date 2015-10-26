@@ -1,0 +1,30 @@
+body {
+	font-family: $body-font;
+}
+
+.page {
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+}
+
+.light {
+	color: $font-color-white;
+}
+
+.dark {
+	color: $font-color-light;
+}
+
+.section-heading {
+	text-align: center;
+	font-style: italic;
+	color: $font-color-dark;
+
+	&:after, &:before  {
+	    content:' ';
+	    display:block;
+	    border-top:3px solid $accent-color;
+	    width: 100px;
+	    margin: 0.7em auto;
+	}	
+}

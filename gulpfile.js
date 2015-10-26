@@ -40,7 +40,10 @@ if (env === 'development') {
 // Sources - can be multiple in each array
 bowerDir = 'bower_components/' ;
 coffeeSources = ['components/coffee/*.coffee'];
-jsSources = ['components/scripts/*.js'];
+jsSources = [
+	bowerDir + 'jquery/dist/jquery.js',
+	bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.js',
+	'components/scripts/*.js'];
 sassSources = ['components/sass/main.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];
@@ -65,7 +68,7 @@ gulp.task('coffee', function(){
 gulp.task('js', function() {
 	gulp.src(jsSources)
 	.pipe(concat('script.js'))
-	.pipe(browserify())
+	//.pipe(browserify())
 	.pipe(gulpif(env === 'production', uglify()))
 	.pipe(gulp.dest(outputDir + 'js'))
 	.pipe(connect.reload()) // Server reload
