@@ -7325,6 +7325,14 @@ body {
   font-size: 18px;
 }
 
+img {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
 .page {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
@@ -7524,6 +7532,41 @@ Image credits: unsplash.com
     width: 100%;
   }
 }
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-family: "Lato";
+  font-size: 45px;
+  font-weight: 900;
+  padding: 10%;
+}
+
+.product img {
+  outline: 3px solid #fff;
+  outline-offset: -32px;
+}
+.product .image-overlay {
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.image-holder {
+  position: relative;
+}
+
+.offer .image-overlay:after, .offer .image-overlay:before {
+  content: ' ';
+  display: block;
+  border: 1px solid #fff;
+  width: 50%;
+  margin: 6px auto;
+}
+
 #trending {
   background-image: url("../images/trendingbg-1920x918.jpg");
 }

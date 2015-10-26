@@ -1,0 +1,42 @@
+.image-overlay {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	text-align: center;
+	width: 100%;
+	font-family: $alt-font;
+	font-size: 45px;
+	font-weight: 900;
+	padding: 10%;
+	
+}
+
+
+.product {
+	img {
+  		outline: 3px solid $white;
+  		outline-offset: -32px;
+	}
+
+	.image-overlay {
+		font-size: 40px;
+		font-weight: 300;
+		font-style: italic;
+	}
+}
+
+.image-holder {
+	position: relative;
+}
+
+.offer .image-overlay {
+
+	&:after, &:before  {
+	    content:' ';
+	    display:block;
+	    border:1px solid $white;
+	    width: 50%;
+	    margin: 6px auto;
+	}	
+}
