@@ -7359,6 +7359,25 @@ img {
   margin: 0.7em auto;
 }
 
+.btn {
+  border-radius: 0;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-primary {
+  color: #333;
+  background-color: transparent;
+  border-color: #333;
+}
+
+.btn-primary:active, .btn-primary:hover, .btn-primary.active, .btn-primary.active:hover, .open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+
 #nav-wrap {
   position: absolute;
   top: 0;
@@ -7406,11 +7425,6 @@ img {
   letter-spacing: 9px;
 }
 
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
@@ -7569,6 +7583,41 @@ Image credits: unsplash.com
 
 #trending {
   background-image: url("../images/trendingbg-1920x918.jpg");
+}
+#trending div {
+  margin-bottom: 30px;
+}
+
+.trending-content {
+  color: #777;
+  letter-spacing: 1px;
+}
+.trending-content h2 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 30px;
+  color: #dc0000;
+  letter-spacing: 0;
+}
+.trending-content h3 {
+  font-weight: normal;
+  font-size: 18px;
+}
+.trending-content hr {
+  width: 40px;
+  border-top: 1px solid #333;
+  margin-left: 0;
+}
+
+.btn-group > .btn {
+  width: 70px;
+  margin-right: 30px;
+}
+
+.trending-links > .btn {
+  padding: 14px;
+  width: 169px;
+  margin-right: 29px;
 }
 
 #subscribe {

@@ -1,3 +1,47 @@
 #trending {
 	background-image: url("../images/trendingbg-1920x918.jpg");
+
+	div {
+		margin-bottom: 30px;
+	}
+}
+
+.trending-content {
+
+	color: $font-color-light;
+	letter-spacing: 1px;
+
+	h2 {
+		font-family: $alt-font;
+		font-weight: bold;
+		font-size: 30px;
+		color: $accent-color;
+		letter-spacing: 0;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 18px;
+	}
+
+	hr {
+		width: 40px;
+		border-top: 1px solid $font-color-dark;
+		margin-left: 0;
+	}
+
+
+}
+
+
+
+.btn-group > .btn {
+    width: 70px;
+    margin-right: 30px;
+}
+
+.trending-links > .btn {
+    padding: 14px;
+    width: 169px;
+     margin-right: 29px;
 }
