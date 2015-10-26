@@ -7355,6 +7355,7 @@ input.form-control {
   text-align: center;
   font-style: italic;
   color: #333;
+  margin-bottom: 60px;
 }
 .section-heading:after, .section-heading:before {
   content: ' ';
@@ -7650,6 +7651,7 @@ input.form-control {
 #subscribe h3 {
   font-weight: 300;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 #subscribe input.form-control {
   width: 770px;
@@ -7663,4 +7665,13 @@ input.form-control {
 #subscribe .btn:hover {
   background-color: #333;
   color: #fff;
+}
+
+.credits {
+  color: #777;
+  text-align: center;
+}
+
+footer .row {
+  margin-bottom: 0;
 }
