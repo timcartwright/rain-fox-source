@@ -7329,6 +7329,11 @@ img {
   width: 100%;
 }
 
+input.form-control {
+  background-color: transparent;
+  border-radius: 0;
+}
+
 .row {
   margin-bottom: 30px;
 }
@@ -7635,7 +7640,27 @@ img {
   font-family: "Lato";
   font-size: 16px;
 }
+.post p.teaser {
+  opacity: 0.6;
+}
 
 #subscribe {
   background-image: url("../images/subscribe-1920x250.jpg");
+}
+#subscribe h3 {
+  font-weight: 300;
+  font-size: 18px;
+}
+#subscribe input.form-control {
+  width: 770px;
+  padding: 25px;
+  color: #fff;
+}
+#subscribe .btn {
+  float: right;
+  width: 257px;
+}
+#subscribe .btn:hover {
+  background-color: #333;
+  color: #fff;
 }

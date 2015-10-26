@@ -1,3 +1,27 @@
 #subscribe {
 	background-image: url("../images/subscribe-1920x250.jpg");
+
+	h3 {
+		font-weight: 300;
+		font-size: 18px;
+	}
+
+	input.form-control {
+		width: 770px;
+		padding: 25px;
+		color: $white;
+	}
+
+	.btn {
+		float: right;
+		width: 257px;
+
+		&:hover {
+			background-color: $font-color-dark;
+			color: $white;
+		}
+	}
 }
+
+
+
