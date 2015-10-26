@@ -7620,6 +7620,22 @@ img {
   margin-right: 29px;
 }
 
+.post {
+  color: #777;
+  letter-spacing: 1px;
+}
+.post h2 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 30px;
+  color: #dc0000;
+  letter-spacing: 0;
+}
+.post p.meta {
+  font-family: "Lato";
+  font-size: 16px;
+}
+
 #subscribe {
   background-image: url("../images/subscribe-1920x250.jpg");
 }

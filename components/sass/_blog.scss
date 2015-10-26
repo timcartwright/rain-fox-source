@@ -1,0 +1,20 @@
+.post {
+
+	color: $font-color-light;
+	letter-spacing: 1px;
+
+	h2 {
+		font-family: $alt-font;
+		font-weight: bold;
+		font-size: 30px;
+		color: $accent-color;
+		letter-spacing: 0;
+	}
+
+	p.meta {
+		font-family: $alt-font;
+		font-size: 16px;
+	}
+
+}
+
