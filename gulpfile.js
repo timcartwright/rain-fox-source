@@ -38,10 +38,10 @@ if (env === 'development') {
 }
 
 // Sources - can be multiple in each array
-bowerDir = './bower_components' ;
+bowerDir = 'bower_components/' ;
 coffeeSources = ['components/coffee/*.coffee'];
 jsSources = ['components/scripts/*.js'];
-sassSources = ['components/sass/main.scss', bowerDir + '/bootstrap-sass-official/assets/stylesheets'];
+sassSources = ['components/sass/main.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];
 
@@ -50,7 +50,7 @@ jsonSources = [outputDir + 'js/*.json'];
 // Bower
 gulp.task('bower', function() { 
     return bower()
-         .pipe(gulp.dest(config.bowerDir)) 
+         .pipe(gulp.dest(bowerDir)) 
 });
 
 // Coffee
@@ -77,7 +77,8 @@ gulp.task('compass', function() {
 	.pipe(compass({
 		sass: 'components/sass',
 		image: outputDir + 'image',
-		style: sassStyle
+		style: sassStyle,
+		import_path: bowerDir + 'bootstrap-sass/assets/stylesheets'
 	})
 	.on('error', gutil.log))
 	.pipe(gulp.dest(outputDir + 'css'))
@@ -132,4 +133,4 @@ gulp.task('connect', function() {
 });
 
 // Default: runs when 'gulp' is run from terminal
-gulp.task('default', ['html','coffee', 'js', 'compass', 'images', 'json', 'connect', 'watch']);
+gulp.task('default', ['bower', 'html','coffee', 'js', 'compass', 'images', 'json', 'connect', 'watch']);
