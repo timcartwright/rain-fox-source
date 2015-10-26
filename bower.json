@@ -1,0 +1,21 @@
+{
+  "name": "brandly",
+  "description": "Fashion themed shop static homepage",
+  "main": "",
+  "authors": [
+    "Tim Cartwright"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/timcartwright/brandly",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5"
+  }
+}
