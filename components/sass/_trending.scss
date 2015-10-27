@@ -1,7 +1,10 @@
 #trending {
 	background-image: url("../images/trendingbg-1920x918.jpg");
 
-	
+	.carousel-indicators {
+	    bottom: -30px;
+	}
+
 }
 
 .trending-content {

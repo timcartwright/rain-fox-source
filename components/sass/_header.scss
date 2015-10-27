@@ -8,10 +8,16 @@
 
 }
 
-.navbar-default, .navbar-collapse {
+.navbar-default {
     border: none;
     background-color: transparent;
 }
+
+ .navbar-collapse.in {
+    background-color: #333;
+    border-color: #333;
+    transition: 0.4s;
+ }
 
 .navbar-default .navbar-nav > li {
 	margin-left: 36px;
@@ -33,6 +39,10 @@
 
 .navbar-default .navbar-brand {
     color: $accent-color;
+}
+
+.navbar-header {
+  margin-bottom: 20px;
 }
 
 .hero {
