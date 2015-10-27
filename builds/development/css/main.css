@@ -7334,6 +7334,10 @@ input.form-control {
   border-radius: 0;
 }
 
+a, .btn {
+  transition: 0.3s;
+}
+
 .col-md-4, .col-md-6, .col-md-8, .col-md-3 {
   margin-bottom: 30px;
 }
@@ -7397,12 +7401,19 @@ input.form-control {
   left: 0;
   right: 0;
   z-index: 99;
-  padding-top: 20px;
 }
 
 .navbar-default {
   border: none;
-  background-color: transparent;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  background-color: rgba(51, 51, 51, 0);
+}
+
+.show-navbar {
+  background-color: rgba(51, 51, 51, 0.7);
 }
 
 .navbar-collapse.in {
@@ -7432,6 +7443,12 @@ input.form-control {
 
 .navbar-header {
   margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Lato";
+  font-size: 32px;
 }
 
 .hero h1, .hero h3 {
@@ -7525,14 +7542,18 @@ input.form-control {
   padding: 10px 40px;
 }
 
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
+.btn.btn-hero {
   color: #fff;
   background-color: transparent;
   border-color: #fff;
   outline: none;
   margin: 20px auto;
+}
+
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+  color: #333;
+  background-color: #fff;
 }
 
 /********************************/
