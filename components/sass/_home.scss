@@ -1,0 +1,79 @@
+#home {
+	color: $white;
+	background-color: $primary-color;
+  padding-top: 50px;
+  height: 100vh;
+
+  
+
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: 16em;
+    
+    }
+
+
+  .content {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-78%);
+  }
+
+  .hotel-icon {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+  }
+
+  a {
+    color: $white;
+
+    &:hover, &:visited, &:active {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .glyphicon {
+    top: 10px;
+    padding-left: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-size: 4em;
+    font-weight: lighter;
+
+    .standout {
+      font-weight: bold;
+    }
+
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    
+
+    &.standout {
+      font-style: italic;
+      font-size: 2em;
+    }
+  }
+
+  .scroll-down {
+    font-weight: bold;
+    padding-top: 1em;
+    font-size: 2em;
+  }
+
+  .etc {
+    margin-top: 2em;
+  }
+
+}

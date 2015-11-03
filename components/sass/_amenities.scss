@@ -1,0 +1,153 @@
+#amenities {
+
+  .page {
+    padding-bottom: 0;
+  }
+
+  .section-description {
+    margin-bottom: 6em;
+  }
+
+
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: 4em;
+    color: $primary-color;
+    }
+
+  .icon-holder {
+    text-align: center;
+    height: 272px;
+  }
+}
+
+
+#rooms {
+
+  background-color: $grey;
+
+  a {
+    
+   
+  }
+
+  .room-heading {
+    font-size: 4em;
+  }
+
+  .col-md-6 {
+    text-align: center;
+  }
+
+  .left-slide {
+    left: -100%;
+  }
+
+  .right-slide {
+    left: 100%;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 1.5em;
+    padding-left: 0;
+
+    
+  }
+
+  .room-price {
+    text-align: center;
+    font-size: 2em;
+  }
+
+}
+
+
+
+
+#restaurant {
+  
+}
+
+#reviews {
+
+  background-color: $grey;
+
+  .reviews {
+    background-color: $primary-color;
+    color: $white;
+    text-align: center;
+    
+
+  }
+
+  .item {
+    text-align: center;
+    font-size: 2em;
+    padding: 3em;
+    font-weight: bold;
+  }
+}
+
+#gmap-canvas {
+
+  height:100%;
+  width:100%;
+  max-width:100%;
+  
+
+  img {
+    max-width:none!important;background:none!important;
+  }
+
+}
+
+.map-wrap {
+  width:100%;max-width:100%;overflow:hidden;height:500px;color:red;
+  }
+
+#map {
+  height:100%;width:100%;border:0;
+}
+
+.scrolloff {
+  pointer-events:none;
+}
+
+#contact {
+  .page {
+    text-align: center;
+  }
+
+  .email {
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+}
+
+.left-food {
+    left: -100%;
+  }
+
+  .right-food {
+    left: 100%;
+  }
+
+  .left-review {
+    left: -100%;
+  }
+
+  .right-review {
+    left: 100%;
+  }
+
+
+footer {
+
+  background-color: $grey;
+  .credits {
+    text-align: center;
+  }
+}

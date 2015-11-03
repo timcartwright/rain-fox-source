@@ -43,6 +43,11 @@ coffeeSources = ['components/coffee/*.coffee'];
 jsSources = [
 	bowerDir + 'jquery/dist/jquery.js',
 	bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.js',
+	'components/scripts/*.js',
+	bowerDir + 'gsap/src/uncompressed/TweenMax.js',
+	bowerDir + 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+	bowerDir + 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
+	// bowerDir + 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
 	'components/scripts/*.js'];
 sassSources = ['components/sass/main.scss'];
 htmlSources = [outputDir + '*.html'];
