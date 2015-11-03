@@ -7568,6 +7568,9 @@ header {
 #home {
   color: #f1edec;
   background-color: #72953d;
+  background-image: url("../images/executive-double-room-bg.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
   padding-top: 50px;
   height: 100vh;
 }
